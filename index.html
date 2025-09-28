@@ -23,6 +23,183 @@
    <link rel="icon" href="images/fevicon.png" type="image/gif" />
    <!-- Scrollbar Custom CSS -->
    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+   
+   <!-- Custom Coquette Theme CSS -->
+   <style>
+   :root {
+      --coquette-mint: #B8E6D3;      /* Verde claro azulado */
+      --coquette-pink: #F8C8DC;      /* Rosa pastel */
+      --coquette-white: #FEFEFE;     /* Blanco crema */
+      --coquette-sage: #A8D5BA;      /* Verde sage */
+      --coquette-blush: #F5B7B1;     /* Rosa blush */
+      --coquette-cream: #FDF2F8;     /* Crema rosado */
+      --text-dark: #2C3E50;          /* Texto oscuro suave */
+   }
+   
+   /* Body and general layout */
+   body.main-layout {
+      background: linear-gradient(135deg, var(--coquette-cream) 0%, var(--coquette-white) 50%, var(--coquette-mint) 100%);
+      min-height: 100vh;
+   }
+   
+   /* Header styling */
+   header {
+      background: var(--coquette-white) !important;
+      box-shadow: 0 2px 15px rgba(184, 230, 211, 0.3);
+   }
+   
+   /* Navigation menu */
+   .main-menu ul > li a {
+      color: var(--text-dark) !important;
+      font-weight: 500;
+   }
+   
+   .main-menu ul > li a:hover {
+      color: var(--coquette-pink) !important;
+   }
+   
+   /* Hero section */
+   .banner_main {
+      background: linear-gradient(45deg, var(--coquette-mint), var(--coquette-sage)) !important;
+   }
+   
+   /* Sections backgrounds */
+   .layout_padding {
+      background: var(--coquette-cream);
+   }
+   
+   .dark_bg {
+      background: linear-gradient(135deg, var(--coquette-sage) 0%, var(--coquette-mint) 100%) !important;
+   }
+   
+   /* Cards and content boxes */
+   .blog_cont, .full {
+      background: var(--coquette-white);
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(248, 200, 220, 0.2);
+      padding: 25px;
+      border: 2px solid var(--coquette-pink);
+   }
+   
+   /* Headings */
+   h1, h2, h3, h4, h5, h6 {
+      color: var(--text-dark) !important;
+   }
+   
+   .heading h3 {
+      color: var(--coquette-sage) !important;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+   }
+   
+   /* Buttons */
+   .main_bt, .reply_bt, button {
+      background: linear-gradient(45deg, var(--coquette-pink), var(--coquette-blush)) !important;
+      border: none !important;
+      border-radius: 25px !important;
+      color: var(--text-dark) !important;
+      font-weight: 600;
+      transition: all 0.3s ease;
+   }
+   
+   .main_bt:hover, .reply_bt:hover, button:hover {
+      background: linear-gradient(45deg, var(--coquette-blush), var(--coquette-pink)) !important;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(248, 200, 220, 0.4);
+   }
+   
+   /* List items */
+   ol.white_font {
+      background: var(--coquette-white);
+      padding: 20px;
+      border-radius: 15px;
+      border-left: 5px solid var(--coquette-pink);
+   }
+   
+   ol.white_font li {
+      color: var(--text-dark) !important;
+      margin: 15px 0;
+      font-weight: 500;
+   }
+   
+   /* Comments section */
+   .comment_blog_line {
+      background: var(--coquette-white);
+      margin: 15px 0;
+      padding: 20px;
+      border-radius: 15px;
+      border: 1px solid var(--coquette-mint);
+   }
+   
+   .contact_text h3 {
+      color: var(--coquette-sage) !important;
+   }
+   
+   .contact_text h4 {
+      color: var(--coquette-pink) !important;
+   }
+   
+   /* Forms */
+   input, textarea {
+      border: 2px solid var(--coquette-mint) !important;
+      border-radius: 10px !important;
+      background: var(--coquette-white) !important;
+   }
+   
+   input:focus, textarea:focus {
+      border-color: var(--coquette-pink) !important;
+      box-shadow: 0 0 10px rgba(248, 200, 220, 0.3) !important;
+   }
+   
+   /* Footer */
+   footer {
+      background: linear-gradient(135deg, var(--coquette-sage) 0%, var(--coquette-mint) 100%) !important;
+   }
+   
+   .footer_contact h4 {
+      color: var(--coquette-cream) !important;
+   }
+   
+   .footer_contact a {
+      color: var(--coquette-white) !important;
+   }
+   
+   /* Marketing sections */
+   .Marketing-bg, .Marketingheading {
+      background: var(--coquette-pink) !important;
+   }
+   
+   /* Text colors */
+   .white_font {
+      color: var(--text-dark) !important;
+   }
+   
+   p {
+      color: var(--text-dark);
+   }
+   
+   /* Images styling */
+   img {
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(184, 230, 211, 0.2);
+   }
+   
+   /* Special decorative elements */
+   .section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--coquette-pink), var(--coquette-mint), var(--coquette-pink));
+   }
+   
+   /* Loader customization */
+   .loader_bg {
+      background: var(--coquette-cream) !important;
+   }
+   </style>
+   
    <!-- Tweaks for older IEs-->
    <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -79,68 +256,6 @@
       <!-- end header inner -->
    </header>
    <!-- end header -->
-  
-
-            <div class="col-md-5">
-               <div class="full slider_cont_section">
-                  <h3>🌿 Escencia Natural 🌸</h3>
-                  <p>🌿 Descubre la esencia de lo natural En Esencia Natural transformamos lo mejor del pepino en experiencias únicas. Te ofrecemos nuestros irresistibles Pepinos Locos, una explosión de sabor que combina lo fresco con lo divertido, y también nuestras cremas y mascarillas de pepino, pensadas para cuidar tu piel de forma saludable y natural. Queremos que disfrutes lo que la naturaleza nos regala: productos frescos, innovadores y con la calidad que mereces. Porque lo natural no tiene que ser aburrido, sino todo un estilo de vida...</p>
-                  <div class="button_section">
-                     <a href="about.html">Sobre Nosotros</a>
-                     <a href="contact.html">Contacto</a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-   <!-- end revolution slider -->
-   <!-- section -->
-   <div class="section layout_padding">
-      <div class="container">
-         <div class="row">
-            <div class="col-md-12">
-               <div class="heading">
-                  <h3>Contacto <span class="orange_color">✨</span></h3>
-               </div>
-            </div>
-         </div>
-         <div class="row">
-            <div class="col-md-6">
-               <img src="images/blog1.png" alt="#" />
-            </div>
-            <div class="col-md-6">
-               <div class="full blog_cont">
-                  <h4>Como Encontrarnos? </h4>
-                  <h5>30/09/25</h5>
-                  <p>Encuentranos en la feria empresarial este martes 30 de septiembre en nuestra institucion, en el corredor del bloque antiguo, al frente del salon de arte. 🌿💖..</p>
-               </div>
-            </div>
-         </div>
-         <div class="row margin_top_30">
-            <div class="col-md-6">
-               <img src="images/blog2.png" alt="#" />
-            </div>
-            <div class="col-md-6">
-               <div class="full blog_cont">
-                  <h4>Nuestra Institucion </h4>
-                  <h5>Institucion Educativa Alberto Lleras Camargo</h5>
-                  <p>
-
-La Institución Educativa Alberto Lleras Camargo está ubicada en Villavicencio, Meta, específicamente en la Calle 6 No. 10-01, barrio El Estero..</p>
-               </div>
-            </div>
-         </div>
-         <div class="row margin_top_30">
-            <div class="col-md-12">
-               <div class="button_section full center margin_top_30">
-                  <a style="margin:0;" href="about.html"></a>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-   <!-- end section -->
    <!-- revolution slider -->
    <div class="banner-slider">
       <div class="container-fluid">
@@ -168,13 +283,113 @@ La Institución Educativa Alberto Lleras Camargo está ubicada en Villavicencio,
                   </a>
                </div>
             </div>
+            <div class="col-md-5">
+               <div class="full slider_cont_section">
+                  <h3>🌿 Escencia Natural 🌸</h3>
+                  <p>🌿 Descubre la esencia de lo natural En Esencia Natural transformamos lo mejor del pepino en
+                     experiencias únicas. Te ofrecemos nuestros irresistibles Pepinos Locos, una explosión de sabor que
+                     combina lo fresco con lo divertido, y también nuestras cremas y mascarillas de pepino, pensadas
+                     para cuidar tu piel de forma saludable y natural. Queremos que disfrutes lo que la naturaleza nos
+                     regala: productos frescos, innovadores y con la calidad que mereces. Porque lo natural no tiene que
+                     ser aburrido, sino todo un estilo de vida...</p>
+                  <div class="button_section">
+                     <a href="about.html">Sobre Nosotros</a>
+                     <a href="contact.html">Contacto</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- end revolution slider -->
+   <!-- section -->
+   <div class="section layout_padding">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="heading">
+                  <h3>Contacto <span class="orange_color">✨</span></h3>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-6">
+               <img src="Imagenes/pepinos pépinos.jpeg" alt="#" /width="300" height="100">
+            </div>
+            <div class="col-md-6">
+               <div class="full blog_cont">
+                  <h4>Como Encontrarnos? </h4>
+                  <h5>30/09/25</h5>
+                  <p>Encuentranos en la feria empresarial este martes 30 de septiembre en nuestra institucion, en el
+                     corredor del bloque antiguo, al frente del salon de arte. 🌿💖..</p>
+               </div>
+            </div>
+         </div>
+         <div class="row margin_top_30">
+            <div class="col-md-6">
+               <img
+                  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijW8ZOpot_S_gtCX8FrutfflkgaBV7rV-Z4M2wUGuAMkykozLGKRVUorWtCp6J7MJMOLLV0sPxAibRVMwhX7sTOzHI2obEJG0OZY9Rvzm21U7bnxGsNW9wq5pjNvTKvna1ePsaYzDnIXJYZsb95MUg5WCBk3GI95FWwzooL0V6g2XCINdVYJAZuw8dSg/s16000/Colegio%20Alberto%20Lleras.jpg"
+                  alt="#" />
+            </div>
+            <div class="col-md-6">
+               <div class="full blog_cont">
+                  <h4>Nuestra Institucion </h4>
+                  <h5>Institucion Educativa Alberto Lleras Camargo</h5>
+                  <p>
+                     La Institución Educativa Alberto Lleras Camargo está ubicada en Villavicencio, Meta,
+                     específicamente en la Calle 6 No. 10-01, barrio El Estero..</p>
+               </div>
+            </div>
+         </div>
+         <div class="row margin_top_30">
+            <div class="col-md-12">
+               <div class="button_section full center margin_top_30">
+                  <a style="margin:0;" href="about.html">Sobre Nosotros</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- end section -->
+   <!-- section -->
+   <div class="section layout_padding dark_bg">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="heading">
+                  <h3>Porque comprarnos?</h3>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-6">
+               <img src="Imagenes/dale con los pepinos.jpeg" alt="#" style="width: 50%; height: auto;" />
+            </div>
+            <div class="col-md-6">
+               <div class="full blog_cont"></div>
+               <h3 class="white_font">Al elegir nuestros productos, no solo disfrutas de
+                  sabores frescos y naturales, sino que también:
+
+               </h3>
+
+               <ol class="white_font">
+                  <li>Apoyas un emprendimiento local 💚.</li>
+                  <li>Obtienes un snack fresco, natural y diferente 🥒🔥.</li>
+                  <li>Recibes un producto artesanal con sabor único 😋.</li>
+               </ol>
+            </div>
+         </div>
+      </div>
+   </div>
+   </div>
+   <!-- end section -->
    <!-- section -->
    <section class="layout_padding">
       <div class="container">
          <div class="row">
             <div class="col-md-12">
                <div class="heading" style="padding-left: 15px;padding-right: 15px;">
-                  <h4 style="border-bottom: solid #333 1px;">Comments / 2</h4>
+                  <h4 style="border-bottom: solid #333 1px;">Comentarios de Clientes / 3</h4>
                </div>
             </div>
          </div>
@@ -182,41 +397,34 @@ La Institución Educativa Alberto Lleras Camargo está ubicada en Villavicencio,
             <div class="col-md-12">
                <div class="full comment_blog_line">
                   <div class="row">
-                     <div class="col-md-1">
-                        <img src="images/c_1.png" alt="#" />
-                     </div>
-                     <div class="col-md-9">
+                     <div class="col-md-12">
                         <div class="full contact_text">
-                           <h3>Veniam</h3>
-                           <h4>Posted on Jan 10 / 2017 at 06:53 am</h4>
-                           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                              tincidunt ut laoreet
-                              dolore magna aliquam erat volutpat.
-                           </p>
+                           <h3>Thomas Duran</h3>
+                           <h4>Publicado el 26 de Septiembre / 2025 a las 03:20 pm</h4>
+                           <p>Los pepinos están muy buenos. Perfectos para el calor 🥒</p>
                         </div>
-                     </div>
-                     <div class="col-md-2">
-                        <a class="reply_bt" href="#">Reply</a>
                      </div>
                   </div>
                </div>
                <div class="full comment_blog_line">
                   <div class="row">
-                     <div class="col-md-1">
-                        <img src="images/c_2.png" alt="#" />
-                     </div>
-                     <div class="col-md-9">
+                     <div class="col-md-12">
                         <div class="full contact_text">
-                           <h3>Jack</h3>
-                           <h4>Posted on Jan 10 / 2017 at 06:53 am</h4>
-                           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                              tincidunt ut laoreet
-                              dolore magna aliquam erat volutpat.
-                           </p>
+                           <h3>David Herra</h3>
+                           <h4>Publicado el 27 de Septiembre / 2025 a las 11:45 am</h4>
+                           <p>Excelente producto natural. La crema funciona muy bien 💚</p>
                         </div>
                      </div>
-                     <div class="col-md-2">
-                        <a class="reply_bt" href="#">Reply</a>
+                  </div>
+               </div>
+               <div class="full comment_blog_line">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <div class="full contact_text">
+                           <h3>Alvaro Uribe</h3>
+                           <h4>Publicado el 28 de Septiembre / 2025 a las 09:15 am</h4>
+                           <p>Recomendado. Buen sabor y precio justo �</p>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -225,7 +433,7 @@ La Institución Educativa Alberto Lleras Camargo está ubicada en Villavicencio,
          <div class="row margin_top_30">
             <div class="col-md-12 margin_top_30">
                <div class="heading" style="padding-left: 15px;padding-right: 15px;">
-                  <h4>Post : Your Comment</h4>
+                  <h4>Deja tu Comentario</h4>
                </div>
             </div>
          </div>
@@ -237,17 +445,17 @@ La Institución Educativa Alberto Lleras Camargo está ubicada en Villavicencio,
                         <div class="col-md-12">
                            <div class="row">
                               <div class="col-md-6">
-                                 <input type="text" name="name" placeholder="Name" required="#" />
+                                 <input type="text" name="name" placeholder="Nombre" required="#" />
                                  <input type="email" name="email" placeholder="Email" required="#" />
                               </div>
                               <div class="col-md-6">
-                                 <textarea placeholder="Comment"></textarea>
+                                 <textarea placeholder="Tu comentario..."></textarea>
                               </div>
                            </div>
                            <div class="row margin_top_30">
                               <div class="col-md-12">
                                  <div class="center">
-                                    <button>Send</button>
+                                    <button>Enviar</button>
                                  </div>
                               </div>
                            </div>
@@ -260,105 +468,44 @@ La Institución Educativa Alberto Lleras Camargo está ubicada en Villavicencio,
       </div>
    </section>
    <!-- end section -->
-   <!-- section -->
-   <div class="section layout_padding blog_blue_bg light_silver">
-      <div class="container">
-         <div class="row">
-            <div class="col-md-8 offset-md-2">
-               <div class="heading">
-                  <h3>Blog</h3>
-               </div>
-            </div>
-         </div>
-         <div class="row">
-            <div class="col-md-8 offset-md-2">
-               <div class="full">
-                  <div class="big_blog">
-                     <img class="img-responsive" src="images/blog_1.png" alt="#" />
-                  </div>
-                  <div class="blog_cont_2">
-                     <h3>Why do we use it</h3>
-                     <p class="sublittle">March 19 2019 5 READ</p>
-                     <p>It is a long established fact that a reader will be distracted by the readable content of a page
-                        when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                        distribution of letters as opposed to using Content here content here making..</p>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-   <!-- end section -->
    <!-- footer -->
-   <footer>
+   <footer style="background-color: #333; padding: 40px 0; color: white;">
       <div class="container">
-         <div class="row">
-            <div class="col-lg-4 col-md-6">
-               <a href="#"><img src="images/footer_logo.png" alt="#" /></a>
-               <ul class="contact_information">
-                  <li><span><img src="images/location_icon.png" alt="#" /></span><span class="text_cont">London
-                        145<br>United Kingdom</span></li>
-                  <li><span><img src="images/phone_icon.png" alt="#" /></span><span class="text_cont">987 654
-                        3210<br>987 654 3210</span></li>
-                  <li><span><img src="images/mail_icon.png" alt="#" /></span><span
-                        class="text_cont">demo@gmail.com<br>support@gmail.com</span></li>
-               </ul>
-               <ul class="social_icon">
-                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                  <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-               </ul>
+         <div class="row align-items-center">
+            <div class="col-md-3">
+               <a href="#"><img src="Imagenes/logo.jpeg" alt="Esencia Natural"
+                     style="width: 120px; height: auto; border-radius: 10px;" /></a>
             </div>
-            <div class="col-lg-2 col-md-6">
-               <div class="footer_links">
-                  <h3>Quick link</h3>
-                  <ul>
-                     <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Home</a></li>
-                     <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Features</a></li>
-                     <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Evens</a></li>
-                     <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Markrting</a></li>
-                     <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Blog</a></li>
-                     <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Testimonial</a></li>
-                     <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Contact</a></li>
-                  </ul>
-               </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-               <div class="footer_links">
-                  <h3>Instagram</h3>
-                  <ol>
-                     <li><img class="img-responsive" src="images/footer_blog.png" alt="#" /></li>
-                     <li><img class="img-responsive" src="images/footer_blog.png" alt="#" /></li>
-                     <li><img class="img-responsive" src="images/footer_blog.png" alt="#" /></li>
-                     <li><img class="img-responsive" src="images/footer_blog.png" alt="#" /></li>
-                  </ol>
-               </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-               <div class="footer_links">
-                  <h3>Contact us</h3>
-                  <form action="index.html">
-                     <fieldset>
-                        <div class="field">
-                           <input type="text" name="name" placeholder="Your Name" required="" />
-                        </div>
-                        <div class="field">
-                           <input type="email" name="email" placeholder="Email" required="" />
-                        </div>
-                        <div class="field">
-                           <input type="text" name="subject" placeholder="Subject" required="" />
-                        </div>
-                        <div class="field">
-                           <textarea placeholder="Message"></textarea>
-                        </div>
-                        <div class="field">
-                           <div class="center">
-                              <button class="reply_bt">Send</button>
-                           </div>
-                        </div>
-                     </fieldset>
-                  </form>
+            <div class="col-md-9">
+               <div class="row text-center">
+                  <div class="col-md-3">
+                     <div class="footer_contact" style="margin-bottom: 20px;">
+                        <h4 style="color: #38c8a8; font-size: 18px; margin-bottom: 10px;">📧 Correo</h4>
+                        <p><a href="mailto:esencianatural@gmail.com"
+                              style="color: #fff; text-decoration: none;">esencianatural@gmail.com</a></p>
+                     </div>
+                  </div>
+                  <div class="col-md-3">
+                     <div class="footer_contact" style="margin-bottom: 20px;">
+                        <h4 style="color: #38c8a8; font-size: 18px; margin-bottom: 10px;">📱 WhatsApp</h4>
+                        <p><a href="tel:+573123456789" style="color: #fff; text-decoration: none;">+57 312 345 6789</a>
+                        </p>
+                     </div>
+                  </div>
+                  <div class="col-md-3">
+                     <div class="footer_contact" style="margin-bottom: 20px;">
+                        <h4 style="color: #38c8a8; font-size: 18px; margin-bottom: 10px;">📸 Instagram</h4>
+                        <p><a href="https://instagram.com/esencia_natural" target="_blank"
+                              style="color: #fff; text-decoration: none;">@esencia_natural</a></p>
+                     </div>
+                  </div>
+                  <div class="col-md-3">
+                     <div class="footer_contact" style="margin-bottom: 20px;">
+                        <h4 style="color: #38c8a8; font-size: 18px; margin-bottom: 10px;">🎵 TikTok</h4>
+                        <p><a href="https://tiktok.com/@esencianatural" target="_blank"
+                              style="color: #fff; text-decoration: none;">@esencianatural</a></p>
+                     </div>
+                  </div>
                </div>
             </div>
          </div>
@@ -386,8 +533,3 @@ La Institución Educativa Alberto Lleras Camargo está ubicada en Villavicencio,
 
 
 </html>
-
-
-
-
-
