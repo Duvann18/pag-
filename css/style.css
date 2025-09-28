@@ -35,13 +35,10 @@
 ---------------------------------------------------------------------*/
 
 body {
-	color: #666666;
-	font-size: 14px;
-	font-family: 'poppins', sans-serif;
-	line-height: 1.80857;
-	font-weight: normal;
-	overflow-x: hidden;
-}
+	  font-family: 'Comic Neue', cursive;
+  margin: 0;
+  background-color: #fdfcfb;
+  color: #444;
 
 a {
 	color: #1f1f1f;
@@ -2118,6 +2115,7 @@ ul.social_icon li a {
 }
 
 .wdt {height: 250px !important;}
+
 
 
 
